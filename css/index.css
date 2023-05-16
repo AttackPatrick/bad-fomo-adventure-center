@@ -22,12 +22,13 @@ h1, h2 {
     font-family: 'Exo 2', sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
-    color: #557e56
+    color: #557e56;
 }
 
 #logo {
     float: left;
     font-size: 280%;
+    margin-left: 30px;
 }
 
 /* navigation links */
@@ -67,10 +68,16 @@ h1, h2 {
     height: 600px;
     width: 100%;
     overflow: hidden;
+
+    position: relative;
+}
+
+#cover-text, #cover-text h2 {
+    color: #683E13;
 }
 
 #hero {
-    height: 600px;
+    height: 100%;
     width: 100%;
     background: url('../images/rock_climbing.jpg') no-repeat center center;
 
@@ -89,3 +96,53 @@ h1, h2 {
         transform: scale(1.1);
     }
 }
+
+#cover-text {
+    font-size: 130%;
+    font-family: 'Taviraj', serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+    width: 600px;
+    height: 100px;
+
+    padding-top: 40px;
+    padding-left: 10px;
+
+    top: 30px;
+    left: 50px;
+
+    position: absolute;
+}
+
+#bf-scope {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 11% 11% 11% 11% 11% 11% 11% 11% 11%;
+    height: 2000px;
+}
+
+.right-text, h2 {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.right-text, p {
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+/*.left-text, p {
+    padding-top: 30px;
+    width: 50%;
+    float: right;
+}
+
+.left-text, h2 {
+    width: 50%;
+    float: left;
+}*/

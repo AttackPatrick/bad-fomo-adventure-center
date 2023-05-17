@@ -115,34 +115,33 @@ h1, h2 {
     position: absolute;
 }
 
-#bf-scope {
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 11% 11% 11% 11% 11% 11% 11% 11% 11%;
-    height: 2000px;
+/* Homepage info */
+
+#bf-info {
+    height: 600px;
+    width: 100%;
 }
 
-.right-text, h2 {
-    grid-column-start: 1;
-    grid-column-end: 6;
-    grid-row-start: 1;
-    grid-row-end: 2;
+.left-heading {
+    text-align: left;
 }
 
-.right-text, p {
-    grid-column-start: 3;
-    grid-column-end: 6;
-    grid-row-start: 2;
-    grid-row-end: 3;
+.right-paragraph {
+    text-align: right;
+    width: 100%;
 }
 
-/*.left-text, p {
-    padding-top: 30px;
-    width: 50%;
-    float: right;
+.right-heading {
+    text-align: right;
 }
 
-.left-text, h2 {
-    width: 50%;
-    float: left;
-}*/
+.left-paragraph {
+    text-align: left;
+    width: 100%;
+}
+
+/* Homepage image styling */
+
+#muck_woman {
+    
+}

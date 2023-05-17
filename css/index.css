@@ -44,6 +44,7 @@ h1, h2 {
 #menu li {
     list-style-type: none;
     margin-right: 30px;
+    display: inline;
 }
 
 #menu a {
@@ -157,14 +158,25 @@ h1, h2 {
 
 #bonfire {
     clip-path: polygon(34% 36%, 34% 1%, 100% 45%, 35% 100%, 35% 60%, 0 54%, 1% 42%);
+    padding-bottom: 80px;
 }
 
 /* Footer */
 
 footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    clear: both;
-    padding-top: 700px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background-color:#557e56;
+}
+
+.socials {
+    text-align: center;
+    font-size: 80px;
+}
+
+.socials > li {
+    display: inline;
 }

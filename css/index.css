@@ -120,10 +120,13 @@ h1, h2 {
 #bf-info {
     height: 600px;
     width: 100%;
+    padding: 50px 10px 50px 10px;
 }
 
 .left-heading {
     text-align: left;
+    clear: right;
+    padding-top: 30px;
 }
 
 .right-paragraph {
@@ -143,5 +146,24 @@ h1, h2 {
 /* Homepage image styling */
 
 #muck_woman {
-    
+    clip-path: polygon(34% 36%, 34% 1%, 100% 45%, 35% 100%, 35% 60%, 0 54%, 1% 42%);
+}
+
+#cabin {
+    float: right;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+#bonfire {
+    clip-path: polygon(34% 36%, 34% 1%, 100% 45%, 35% 100%, 35% 60%, 0 54%, 1% 42%);
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    clear: both;
+    padding-top: 800px;
 }

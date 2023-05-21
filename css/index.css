@@ -91,14 +91,6 @@ h1, h2 {
     animation-fill-mode: forwards;
 }
 
-#hero-outer2 {
-    height: 600px;
-    width: 100%;
-    overflow: hidden;
-
-    position: relative;
-}
-
 #hero2 {
     height: 100%;
     width: 100%;
@@ -110,6 +102,16 @@ h1, h2 {
     animation-fill-mode: forwards;
 }
 
+#hero3 {
+    height: 100%;
+    width: 100%;
+    background: url('../images/waterfall-connemara.jpg') no-repeat center center;
+
+    /* animates zoom effect on loading page */
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
 /* zoom for hero image */
 @keyframes hero-zoom {
     from{
@@ -134,6 +136,26 @@ h1, h2 {
 
     top: 30px;
     left: 50px;
+
+    position: absolute;
+}
+
+#cover-text3 {
+    font-size: 130%;
+    font-family: 'Taviraj', serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+    width: 600px;
+    height: 100px;
+
+    text-align: right;
+
+    padding-top: 40px;
+    padding-left: 10px;
+
+    top: 30px;
+    right: 50px;
 
     position: absolute;
 }
@@ -213,4 +235,14 @@ footer > p {
     font-weight: 600;
     width: 33%;
     color: #683E13;
+}
+
+#gallery {
+    clear: both;
+    line-height: 0;
+    column-count: 3;
+    column-gap: 0;
+    width: fit-content;
+    height: fit-content;
+    width: 100%;
 }

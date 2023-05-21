@@ -7,21 +7,25 @@
     <meta name="keywords" content="bad fomo, adventure center, ireland, galway">
 
     <link href="css/index.css" rel="stylesheet" type="text/css">
-
+    <style>
+        body {
+            background-image: ('images/forest_backdrop.jpg');
+        }
+    </style>
     <title>Bad Fomo Adventure Park</title>
 </head>
 <body>
     <header>
-        <a href="home.html">
+        <a href="index.html">
             <h1 id="logo">Bad Fomo Adventure Park</h1>
         </a>
-        <nav>
+        <nav id="menu">
             <ul>
                 <li>
                     <a href="home.html">Home</a>
                 </li>
                 <li>
-                    <a href="activities.html">Activities</a>
+                    <a href="activities.html" class="active">Activities</a>
                 </li>
                 <li>
                     <a href="choose_your_adventure.html">Choose Your Adventure</a>
@@ -29,13 +33,35 @@
             </ul>
         </nav>
     </header>
-    <section id="hero">
-        <img src="images/adventure-park-home-header.jpg" alt="Forst Obstacle Course">
+    <section id="hero-outer2">
+        <div id="hero2"></div>
         <h2>Bad Fomo Adventure Park</h2>
         <h3>Connemara</h3>
     </section>
     <footer>
-        social links here
+        <p>
+            Made By Patrick Lynch @ github.com/AttackPatrick<br>
+            This website was made for educational purposes.
+        </p>
+        <ul class="socials">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in new tab)"><i class="fa-brands fa-square-facebook"></i></a>
+            </li>
+            <li>
+                <a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Visit our Twitter page (opens in new tab)"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="Visit our Youtube page (opens in new tab)"><i class="fa-brands fa-youtube"></i></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Visit our Instagram page (opens in new tab)"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/en/" target="_blank" rel="noopener" aria-label="Visit our Tik Tok page (opens in new tab)"><i class="fa-brands fa-tiktok"></i></a>
+            </li>
+        </ul>
     </footer>
+    <!--fontawesome script-->
+    <script src="https://kit.fontawesome.com/020d3091a7.js" crossorigin="anonymous"></script>
 </body>
 </html>

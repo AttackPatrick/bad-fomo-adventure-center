@@ -2,7 +2,7 @@
 
 /* font-family: 'Exo 2', sans-serif;
 font-family: 'Hind', sans-serif;
-font-family: 'Taviraj', serif; */
+font-family: 'Taviraj', serif;*/
 
 * {
     margin: 0;
@@ -149,8 +149,6 @@ h1, h2 {
     width: 600px;
     height: 100px;
 
-    text-align: right;
-
     padding-top: 40px;
     padding-left: 10px;
 
@@ -245,4 +243,74 @@ footer > p {
     width: fit-content;
     height: fit-content;
     width: 100%;
+}
+
+#info {
+    width: 90%;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+/* form styling */
+
+.form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    float: left;
+    padding-top: 30px;
+    padding-bottom: 80px;
+    padding-left: 20px;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-container input,
+.form-container select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.form-container .checkbox-container {
+    display: flex;
+}
+
+.form-container .checkbox-container label {
+    margin-right: 10px;
+}
+
+.radio-container {
+    display: flex;
+    align-items: center;
+}
+
+.radio-button {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.radio-button input[type="radio"] {
+    margin-right: 5px;
+}
+
+.radio-container label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.radio-container input[type="radio"] {
+    margin-right: 5px;
+}
+
+.form-container .submit-button {
+    background-color: #a9b481;
+    color: #683E13;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
 }

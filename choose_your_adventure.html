@@ -17,7 +17,7 @@
         <nav id="menu">
             <ul>
                 <li>
-                    <a href="home.html">Home</a>
+                    <a href="index.html">Home</a>
                 </li>
                 <li>
                     <a href="activities.html">Activities</a>
@@ -34,6 +34,110 @@
             <h2>...Your Adventure Awaits. Dig Deep and Fly High.</h2>
         </div> 
     </section>
+    <section>
+        <p id="info">
+            Fill out all the details you can and don't worry if you are unsure about what you can
+            commit to. Once you submit the form,one of our operators will email you to help organise
+            your stay. We can set up monthly plans so you don't have to cheapen your experience.
+        </p>
+        <div class="form-container">
+            <form>
+                <label for="first-name" class="text_inputs">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+
+                <label for="last-name" class="text_inputs">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+
+                <label for="email" class="text_inputs">Email:</label>
+                <input type="email" id="email" name="email" required>
+           
+                <label for="stay-duration" class="dropdown">How many days do you wish to stay?</label>
+                <select id="stay-duration" name="stay-duration">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+           
+                <label for="num-people" class="dropdown">How many people?</label>
+                <select id="num-people" name="num-people">
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                </select>
+
+                <label for="start-date">Start Date:</label>
+                <input type="date" id="start-date" name="start-date">
+
+                <label for="end-date">End Date:</label>
+                <input type="date" id="end-date" name="end-date">>
+
+                <label for="activities">Activities:</label>
+                <div class="checkbox-container">
+                    <label><input type="checkbox" name="activities" value="canoeing">Canoeing</label>
+                    <label><input type="checkbox" name="activities" value="ziplining">Ziplining</label>
+                    <label><input type="checkbox" name="activities" value="orienteering">Orienteering</label>
+                    <label><input type="checkbox" name="activities" value="rock-climbing">Rock Climbing</label>
+                    <label><input type="checkbox" name="activities" value="surfing">Surfing</label>
+                    <label><input type="checkbox" name="activities" value="archery">Archery</label>
+                    <label><input type="checkbox" name="activities" value="hang-gliding">Hang Gliding</label>
+                </div>
+
+                <label>Accommodation:</label>
+                <div class="radio-container">
+                    <div class="radio-button">
+                        <input type="radio" id="luxury" name="accommodation" value="luxury">
+                        <label for="luxury">Luxury Cabin</label>
+                    </div>
+                    <div class="radio-button">
+                        <input type="radio" id="glamping" name="accommodation" value="glamping">
+                        <label for="glamping">Glamping</label>
+                    </div>
+                    <div class="radio-button">
+                        <input type="radio" id="campsite" name="accommodation" value="campsite">
+                        <label for="campsite">Campsite</label>
+                    </div>
+                </div>
+
+                <label>Dining experience:</label>
+                <div class="radio-container">
+                    <label>
+                        <input type="radio" name="dining_experience" value="5_Star_restaurant">
+                        5 Star Restaurant
+                    </label>
+                    <label>
+                        <input type="radio" name="dining_experience" value="communal_kitchen">
+                        Communal Kitchen
+                    </label>
+                    <label>
+                        <input type="radio" name="dining_experience" value="campfire_bbq">
+                        Campfire BBQ
+                    </label>
+                </div>
+            </form>
+        </div>
         <footer>
             <p>
                 Made By Patrick Lynch @ <a href="https://github.com/AttackPatrick" target="_blank" rel="noopener" aria-label="Visit My Github page to check out my other work and see if it is right for you (opens in new tab)">github.com/AttackPatrick</a><br>

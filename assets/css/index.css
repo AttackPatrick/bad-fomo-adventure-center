@@ -20,7 +20,7 @@ body {
     /* padding-bottom: 625px; */
     margin: 0;
     padding: 0;
-    border: 2px yellow solid;
+    box-sizing: border-box;
 }
 
 /* headings and logo*/
@@ -178,9 +178,11 @@ h1, h2 {
 /* Homepage info */
 
 #bf-info {
-    height: 600px;
+    min-height: 600px;
     width: 100%;
     padding: 50px 10px 50px 10px;
+    box-sizing: border-box;
+    margin-bottom: 50px;
 }
 
 .left-heading {
@@ -203,22 +205,44 @@ h1, h2 {
     width: 95%;
 }
 
+.segmentDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.segmentDiv2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.textDiv {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.textDiv h2 {
+    margin-bottom: 50px;
+}
+
 /* Homepage image styling */
 
 #muck_woman {
     clip-path: polygon(41% 19%, 100% 50%, 47% 79%, 0% 100%, 25% 50%, 0% 0%);
-    border: 2px purple solid;
+    width: 500px;
+    height: 300px;
 }
 
 #cabin {
     float: right;
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-    border: 2px purple solid;
 }
 
 #bonfire {
     clip-path: polygon(41% 19%, 100% 50%, 47% 79%, 0% 100%, 25% 50%, 0% 0%);
-    border: 2px purple solid;
 }
 
 /* Footer */
@@ -335,6 +359,15 @@ footer > p {
     cursor: pointer;
 }
 
+@media only screen and (max-width: 860px) {
+    .segmentDiv {
+        flex-direction: column-reverse;
+    }
+     .segmentDiv2 {
+        flex-direction: column;
+     }
+}
+
 @media only screen and (max-width: 776px) {
     #logo {
         font-size: 160%;
@@ -364,7 +397,8 @@ footer > p {
     }
     #muck_woman {
         float: center;
-        width: 100%
+        width: 400px;
+
     }
     #cabin {
         float: center;

@@ -20,7 +20,7 @@
         <nav id="menu">
             <ul>
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="index.html" >Home</a>
                 </li>
                 <li>
                     <a href="activities.html">Activities</a>
@@ -30,6 +30,14 @@
                 </li>
             </ul>
         </nav>
+        <button class="hambtn" >
+            <!-- <img src="./assets/images/hamburger.svg"> -->
+            <svg viewBox="0 0 100 80" width="40" height="40">
+                <rect width="100" height="20"></rect>
+                <rect y="30" width="100" height="20"></rect>
+                <rect y="60" width="100" height="20"></rect>
+              </svg>
+        </button>
     </header>
     <section id="hero-outer">
         <div id="hero3"></div>
@@ -170,6 +178,19 @@
     </footer>
     <!--fontawesome script-->
     <script src="https://kit.fontawesome.com/020d3091a7.js" crossorigin="anonymous"></script>
+    <script>
+        const hambtn = document.getElementsByClassName("hambtn")[0]
+        const menu = document.getElementById("menu")
+        hambtn.addEventListener("click", function() {
+            
+            if (menu.style.display != "block") {
+                menu.style.display = "block"
+            } else {
+                menu.style.display = "none"
+            }
+        }
+        )
+    </script>
 </body>
 
 </html>

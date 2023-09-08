@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="West of Ireland Adventure Center for people looking for a few days in the wilderness doing outdoor activities">
+    <meta name="description"
+        content="West of Ireland Adventure Center for people looking for a few days in the wilderness doing outdoor activities">
     <meta name="keywords" content="bad fomo, adventure center, ireland, galway">
 
     <link href="./assets/css/index.css" rel="stylesheet" type="text/css">
     <title>Bad Fomo Adventure Park</title>
 </head>
+
 <body>
     <header>
         <a href="index.html">
@@ -27,13 +30,13 @@
                 </li>
             </ul>
         </nav>
-        <button class="hambtn" >
+        <button class="hambtn">
             <!-- <img src="./assets/images/hamburger.svg"> -->
             <svg viewBox="0 0 100 80" width="40" height="40">
                 <rect width="100" height="20"></rect>
                 <rect y="30" width="100" height="20"></rect>
                 <rect y="60" width="100" height="20"></rect>
-              </svg>
+            </svg>
         </button>
     </header>
     <section id="hero-outer">
@@ -41,33 +44,39 @@
         <h2>Bad Fomo Adventure Park</h2>
         <h3>Connemara</h3>
     </section>
-    <section id="gallery">
-        <img src="./assets/images/canoeing.jpg" alt="A person canoeing with a hill ahead in the distance" style="width: 400px; height: 300px;">
-        <img src="./assets/images/rock_climbing2.jpg" alt="A person climbing a wall with an instructor" style="width: 400px; height: 600px;">
-        <img src="./assets/images/group_photo.webp" alt="A group of people smiling and posing for a photo" style="width: 400px; height: 300px;">
-        <img src="./assets/images/surf.webp" alt="Two people walking towards water holding surf boards" style="width: 400px; height: 300px;">
-        <img src="./assets/images/hang_gliding.jpg" alt="Two people doing a tandem hang glide" style="width: 400px; height: 300px;">
-        <img src="./assets/images/zipline.jpg" alt="Two people on adjacent ziplines reaching to try and touch hands" style="width: 400px; height: 300px;">
-        <img src="./assets/images/bar_and_fire.webp" alt="An outside bar lit with fairy lights at night" style="width: 400px; height: 300px;">
-        <img src="./assets/images/archery.jpg" alt="Woman aiming at target with a bow and arrow" style="width: 400px; height: 300px;">
-        </section>
+    <section id="gallery" >
+        <img class="gallery-image" src="./assets/images/canoeing.jpg" alt="A person canoeing with a hill ahead in the distance" >
+        <img class="gallery-image2" src="./assets/images/Rock-Climbing(new).jpg" alt="A person climbing a wall with an instructor" >
+        <img class="gallery-image" id="oddFit" src="./assets/images/group_photo.webp" alt="A group of people smiling and posing for a photo" >
+        <img class="gallery-image" src="./assets/images/surf.webp" alt="Two people walking towards water holding surf boards" >
+        <img class="gallery-image" src="./assets/images/Hang-Glider(new).jpg" alt="Two people doing a tandem hang glide" >
+        <img class="gallery-image" src="./assets/images/zipline.jpg" alt="Two people on adjacent ziplines reaching to try and touch hands" >
+        <img class="gallery-image" src="./assets/images/bar_and_fire.webp" alt="An outside bar lit with fairy lights at night" >
+        <img class="gallery-image" src="./assets/images/archery.jpg" alt="Woman aiming at target with a bow and arrow" >
+    </section>
     <footer>
         <p>
-            Made By Patrick Lynch @ <a href="https://github.com/AttackPatrick" target="_blank" rel="noopener" aria-label="Visit My Github page to check out my other work and see if it is right for you (opens in new tab)">github.com/AttackPatrick</a><br>
+            Made By Patrick Lynch @ <a href="https://github.com/AttackPatrick" target="_blank" rel="noopener"
+                aria-label="Visit My Github page to check out my other work and see if it is right for you (opens in new tab)">github.com/AttackPatrick</a><br>
             This website was made for educational purposes.
         </p>
         <ul class="socials">
             <li>
-                <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in new tab)"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our Facebook page (opens in new tab)"><i
+                        class="fa-brands fa-square-facebook"></i></a>
             </li>
             <li>
-                <a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Visit our Twitter page (opens in new tab)"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://twitter.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our Twitter page (opens in new tab)"><i class="fa-brands fa-twitter"></i></a>
             </li>
             <li>
-                <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="Visit our Youtube page (opens in new tab)"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our Youtube page (opens in new tab)"><i class="fa-brands fa-youtube"></i></a>
             </li>
             <li>
-                <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Visit our Instagram page (opens in new tab)"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our Instagram page (opens in new tab)"><i class="fa-brands fa-instagram"></i></a>
             </li>
         </ul>
     </footer>
@@ -76,8 +85,14 @@
     <script>
         const hambtn = document.getElementsByClassName("hambtn")[0]
         const menu = document.getElementById("menu")
-        hambtn.addEventListener("click", function() {
-            
+        const gallery = document.getElementById("gallery")
+        console.log(gallery)
+        window.onload = function() {
+            console.log("loaded")
+            gallery.style.display = "block"
+        }
+        hambtn.addEventListener("click", function () {
+
             if (menu.style.display != "block") {
                 menu.style.display = "block"
             } else {
@@ -85,6 +100,8 @@
             }
         }
         )
+        
     </script>
 </body>
+
 </html>
